@@ -4,7 +4,6 @@
 }
 html{
   font-size: 62.5%;
-  color: white;
   font-family: 'Courier New', Courier, monospace;
 }
 hr{
@@ -22,11 +21,13 @@ background-color: #15202B;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  color: black;
 }
 .innerid{
   font-size: 3rem;
   display: flex;
   line-height: 5em;
+  margin-left: -10%;
 }
 .innerid span{
   color: aquamarine;
@@ -35,6 +36,7 @@ background-color: #15202B;
 #header_list{
   display: flex;
   cursor: pointer;
+  margin-right: -10%;
 }
 #header_list li{
   margin: 0 2rem 0 2rem;
@@ -120,7 +122,7 @@ html{
   width: 60%;
   padding-right: 40px;
   position: absolute;
-  top: -130px;
+  top: -200px;
   background-color: red;
   border-radius: 4rem;
   padding: 10px 50px;
@@ -235,6 +237,7 @@ margin-top: 10rem;
 .fac1{
 background-image:linear-gradient(black,darkblue);
 color: black;
+width: 30%;
 margin: 3rem;
 padding: 10rem;
 font-size: 3rem;
@@ -252,11 +255,11 @@ margin: 2rem 0 2rem 0;
 color: aquamarine;
 font-weight: bolder;
 transition: 1s;
+word-wrap: break-word;
 }
 .fac1::before{
 content: "";
 position: absolute;
-/* color: aquamarine; */
 background-image: linear-gradient(120deg,aqua,aquamarine);
 top: 0;
 left: 0;
@@ -340,6 +343,7 @@ z-index: 1;
   object-fit:cover;
   transition: 0.5s;
   transform-origin: top;
+  filter: invert(2);
 }
 .srv h2{
   font-size: 4rem;
@@ -381,7 +385,7 @@ z-index: 1;
     font-size: 2rem;
   }
 }
-@media (max-width:430px) {
+@media (max-width:340px) {
   .service{
     flex-wrap: wrap;
   }
@@ -698,3 +702,34 @@ z-index: 1;
  
 }
 
+
+
+#google{
+  color: black;
+  width: 40rem;
+  font-size: 2rem;
+}
+.goog-te-combo{
+  color: black;
+}
+#google option{
+  color: black;
+}
+.skiptranslate iframe{
+  display: none;
+}
+body{
+  top: 0 !important;
+}
+.goog-te-gadget {
+  background-color: #15202B;
+}
+.goog-logo-link{
+  display: none;
+}
+.skiptranslate.goog-te-gadget{
+  visibility: hidden;
+}
+div#\:0\.targetLanguage{
+  visibility: visible;
+}

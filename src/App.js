@@ -1,33 +1,38 @@
+/* eslint-disable no-undef */
 import "./App.css";
 
 import { Facility, Srv } from "./component/facility";
 import Cube from "./component/cube";
 import { About, AboutText } from "./component/about";
 function App() {
-  function menu() {
-    document.getElementById("header_list").style.top === "-130px"
-      ? (document.getElementById("header_list").style.top = "100px")
-      : (document.getElementById("header_list").style.top = "-130px");
-  }
 
+  function menu() {
+    document.getElementById("header_list").style.top === "-200px"
+      ? (document.getElementById("header_list").style.top = "100px")
+      : (document.getElementById("header_list").style.top = "-200px");
+ 
+  }
+  document.getElementsByClassName("goog-te-combo").value="language"
+  
   return (
     <>
       <div className="main">
         <div id="header">
           <nav className="innerid">
             <b>
-              <span>HOST</span>INGER
+              <span style={{color:"aqua"}}>HOSTINGER</span>
             </b>
           </nav>
          
-         
+          
+
           <b
             id="menu"
             onClick={() => {
               menu();
             }}
           >
-            =
+            <img src="https://www.logolynx.com/images/logolynx/00/00b9c1e4e9ef5c58b11ddecb020b8776.png" className="img-fluid bg-white" width="15px"alt=""/>
           </b>
           <ul id="header_list">
             <li>Hosting</li>
@@ -228,7 +233,7 @@ function App() {
 
                 <form className="d-flex w-50 mt-5 " role="search">
                   <input
-                    className="form-control me-2"
+                    className="form-control me-2 p-3"
                     type="search"
                     placeholder="Search"
                     aria-label="Search"
@@ -380,16 +385,16 @@ function App() {
                       <hr style={{width:"100%"}}/>
                       <div className="row mt-3">
                         <div className="col-3">
-                          <img class="img-card-sm img-fluid bg-white rounded-pill w-25" src="https://madebydesignesia.com/themes/hostco/images/payments-logo/visa.png" alt=""/>
+                          <img className="img-card-sm img-fluid bg-white rounded-pill w-25" src="https://madebydesignesia.com/themes/hostco/images/payments-logo/visa.png" alt=""/>
                         </div>
                         <div className="col-3">
-                          <img class="img-card-sm img-fluid bg-white rounded-pill w-25" src="https://madebydesignesia.com/themes/hostco/images/payments-logo/master-card.png" alt=""/>
+                          <img className="img-card-sm img-fluid bg-white rounded-pill w-25" src="https://madebydesignesia.com/themes/hostco/images/payments-logo/master-card.png" alt=""/>
                         </div>
                         <div className="col-3">
-                          <img class="img-card-sm img-fluid bg-white rounded-pill w-25" src="https://madebydesignesia.com/themes/hostco/images/payments-logo/jcb.png" alt=""/>
+                          <img className="img-card-sm img-fluid bg-white rounded-pill w-25" src="https://madebydesignesia.com/themes/hostco/images/payments-logo/jcb.png" alt=""/>
                         </div>
                         <div className="col-3">
-                          <img class="img-card-sm img-fluid bg-white rounded-pill w-25" src="https://madebydesignesia.com/themes/hostco/images/payments-logo/paypal.png" alt=""/>
+                          <img className="img-card-sm img-fluid bg-white rounded-pill w-25" src="https://madebydesignesia.com/themes/hostco/images/payments-logo/paypal.png" alt=""/>
                         </div>
                       </div>
                     </div>
@@ -431,9 +436,17 @@ function App() {
                               <p className="display-6 my-5" style={{color:"white",fontFamily:"cursive",cursor:"pointer"}}>Partners</p>
                           </div>
                         </div>
-                        
-                        
                     </div>
+
+                    <div className="row d-flex align-items-center">
+                        <div className="col-lg-6 col-md-6 col-sm-6">
+                          <div className="d-flex justify-content-center mb-3 lan" style={{fontSize:"5rem"}}><div id="google"></div></div>
+                        </div>
+                        <div className="col-lg-6 col-md-6 col-sm-6">
+                          <div className="d-flex justify-content-center" style={{fontSize:"2rem"}}>MADE BY Sahilrana-990 || THIS CODEFEST HOSTED BY <div className="bg-black w-25 mb-5 rounded-pill"><a href={"https://www.youtube.com/c/ThapaTechnical"} style={{textDecoration:"none",color:"white"}}>THAPA TECHNICAL</a></div></div>
+                        </div>
+                    </div>
+                    
                 </div>
               </div>
 
